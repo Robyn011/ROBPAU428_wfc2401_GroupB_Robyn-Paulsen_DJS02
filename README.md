@@ -31,7 +31,7 @@ The provided HTML and JavaScript setup a basic form for inputting two numbers (d
 - AND 10 is entered into the second input
 - THEN 2 should be displayed at the bottom
  
-<h2 style="color:#e67e22">Unresolved Stories</h2> 
+
 
 ### Scenario 3: Dividing numbers result in a decimal number
 
@@ -76,7 +76,7 @@ The provided HTML and JavaScript setup a basic form for inputting two numbers (d
 4. **Testing**: Test your application thoroughly with various inputs to ensure it meets all the user stories.
 
 ## In Progress:
-Unresolved Stories:
+### Unresolved Stories:
 
 2) Dividing numbers result in a decimal number should round down :)
 
