@@ -1,12 +1,9 @@
 const form = document.querySelector("[data-form]");
 const result = document.querySelector("[data-result]");
 
-function disableForm() {
-  // Disable form elements upon encountering an error
-  const formElements = form.querySelectorAll("input, button");
-  formElements.forEach(element => {
-    element.disabled = true;
-  });
+function displayErrorMessage() {
+  //error message on entire screen
+  document.body.innerHTML = "<div style='font-size: 24px; text-align: center; margin-top: 50px; color: #e67e22; '>Something critical went wrong. Please reload the page</div>";
 }
 
 form.addEventListener("submit", (event) => {
@@ -48,11 +45,12 @@ form.addEventListener("submit", (event) => {
   }
 }
   catch (error) {
-    result.innerText = "Something critical went wrong. Please reload the page";
+    
     console.error(error);
       // Disable form elements upon encountering an error
-    disableForm()
+      displayErrorMessage()
   }
 });
+
 
 
